@@ -10,12 +10,13 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-h1 {
+h1,
+h2 {
   text-align: center;
 }
 
 .titulo {
-  padding: 50px;
+  padding: 50px 0 10px;
 }
 
 .calculadora {
@@ -50,7 +51,7 @@ h1 {
 }
 
 .botao:hover {
-  background: #000;
+  background: rgb(153, 153, 153);
 }
 
 .operadores:hover {
