@@ -7,54 +7,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tuto da Calculadora</title>
 
-  <link rel="icon" href="./calculator.svg" type="image/svg+xml">
+  <link rel="icon" href="calculator.svg" type="image/svg+xml">
   <link href="./style.css" rel="stylesheet">
+
 
 </head>
 
 <body>
-  <div class="fundo">
-    <div class="titulo-pagina">
-      <h1 class="titulo">Tutorial da Calculadora</h1>
-      <h2>Guilherme Emanuell</h2>
+  <section id="home">
+    <div class="col-a">
+      <header>
+        <h1 class="titulo">Tutorial da Calculadora</h1>
+      </header>
     </div>
-    <div class="calculadora">
-      <!--       <h1>Calculadora</h1> -->
-      <p id="resultado"></p>
-      <table>
-        <tr>
-          <td><button class="botao operadores" onclick="clean()">C</button></td>
-          <td><button class="botao operadores" onclick="back()">←</button></td>
-          <td><button class="botao operadores" onclick="insert('/')">/</button></td>
-          <td><button class="botao operadores" onclick="insert('*')">X</button></td>
-        </tr>
-        <tr>
-          <td><button class="botao" onclick="insert('7')">7</button></td>
-          <td><button class="botao" onclick="insert('8')">8</button></td>
-          <td><button class="botao" onclick="insert('9')">9</button></td>
-          <td><button class="botao operadores" onclick="insert('-')">-</button></td>
-        </tr>
-        <tr>
-          <td><button class="botao" onclick="insert('4')">4</button></td>
-          <td><button class="botao" onclick="insert('5')">5</button></td>
-          <td><button class="botao" onclick="insert('6')">6</button></td>
-          <td><button class="botao operadores" onclick="insert('+')">+</button></td>
-        </tr>
-        <tr>
-          <td><button class="botao" onclick="insert('1')">1</button></td>
-          <td><button class="botao" onclick="insert('2')">2</button></td>
-          <td><button class="botao" onclick="insert('3')">3</button></td>
-          <td rowspan="2"><button class="botao igualdade" id="botao-igual" onclick="calcular()">=</button></td>
-        </tr>
-        <tr>
-          <td colspan="2"><button class="botao" onclick="insert('0')" id="botao-zero">0</button></td>
-          <td><button class="botao" onclick="insert('.')">.</button></td>
-        </tr>
-      </table>
+  </section>
+  <section id="content">
+    <div class="col-b">
+      <div class="calculadora">
+        <!--       <h1>Calculadora</h1> -->
+        <p id="resultado"></p>
+        <table>
+          <tr>
+            <td><button class="botao operadores" onclick="clean()">C</button></td>
+            <td><button class="botao operadores" onclick="back()">←</button></td>
+            <td><button class="botao operadores" onclick="insert('/')">/</button></td>
+            <td><button class="botao operadores" onclick="insert('*')">X</button></td>
+          </tr>
+          <tr>
+            <td><button class="botao" onclick="insert('7')">7</button></td>
+            <td><button class="botao" onclick="insert('8')">8</button></td>
+            <td><button class="botao" onclick="insert('9')">9</button></td>
+            <td><button class="botao operadores" onclick="insert('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="botao" onclick="insert('4')">4</button></td>
+            <td><button class="botao" onclick="insert('5')">5</button></td>
+            <td><button class="botao" onclick="insert('6')">6</button></td>
+            <td><button class="botao operadores" onclick="insert('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="botao" onclick="insert('1')">1</button></td>
+            <td><button class="botao" onclick="insert('2')">2</button></td>
+            <td><button class="botao" onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button class="botao igualdade" id="botao-igual" onclick="calcular()">=</button></td>
+          </tr>
+          <tr>
+            <td colspan="2"><button class="botao" onclick="insert('0')" id="botao-zero">0</button></td>
+            <td><button class="botao" onclick="insert('.')">.</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- popup - dentro do body -->
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="./popup-script.js"></script>
+  <link href="./popup-style.css" rel="stylesheet">
+
+  <div class="modal">
+    <div class='popup'>
+      <div class='cnt223'>
+        <h1>Ei, prestenção aqui!</h1>
+        <p>
+          Esse projeto está em "stand-by".
+          Logo menos (ou beeeem mais), terminá-lo-ei.
+          Aprecie com sabedoria. 😉
+          <br>
+          <br>
+          <a href='' class='close'>Entendido</a>
+        </p>
+      </div>
     </div>
   </div>
+
+
+  <!-- popup - dentro do body -->
+
 </body>
 
-<script type="text/javascript" src="./calc.js"></script>
+<script type="text/javascript" src="calc.js"></script>
 
 </html>
